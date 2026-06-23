@@ -1,3 +1,6 @@
+from newpy.creator import create_project
+
+
 def run(argv: list[str]) -> None:
     if len(argv) < 2:
         print("Usage: newpy <project-name>")
@@ -5,4 +8,4 @@ def run(argv: list[str]) -> None:
 
     project_name = argv[1]
 
-    print(f"Creating project: {project_name}")
+    create_project(project_name)
